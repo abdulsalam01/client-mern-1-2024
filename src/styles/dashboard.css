@@ -1,0 +1,20 @@
+/* mobile first */
+
+:root {
+    --primary: #4361ee;
+    --secondary: #06d6a0;
+    --danger: #ef476f;
+    --warning: #ffd166;
+    --background: #f8f9fa;
+    --text: #2b2d42;
+    --text-light: #8d99ae;
+    --card-bg: #ffffff;
+    --border-radius: 16px;
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --transition: all 0.3s ease;
+}
+
+
+
+

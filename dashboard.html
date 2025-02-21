@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>DuitKu - Dashboard</title>
+    <link rel="stylesheet" href="styles/dashboard.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Side Navigation -->
+    <nav class="sidenav">
+      <div class="brand">
+        <svg
+          class="logo"
+          width="40"
+          height="40"
+          viewBox="0 0 40 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z"
+            fill="#4361EE"
+          />
+          <path
+            d="M26.5 13.5L22.5 17.5M13.5 25.5L17.1667 21.8333M25 24L21 20M18.5 12.5L15.5 15.5"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M24.1667 21.6667C24.1667 23.5076 22.6743 25 20.8333 25C18.9924 25 17.5 23.5076 17.5 21.6667C17.5 19.8257 18.9924 18.3333 20.8333 18.3333C22.6743 18.3333 24.1667 19.8257 24.1667 21.6667Z"
+            stroke="white"
+            stroke-width="2"
+          />
+        </svg>
+        <h1>DuitKu</h1>
+      </div>
+
+      <nav class="nav-menu">
+        <a href="#" class="nav-item active">
+          <i class="fas fa-home"></i>
+          <span>Dashboard</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fas fa-chart-pie"></i>
+          <span>Anggaran</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fas fa-chart-line"></i>
+          <span>Investasi</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fas fa-bullseye"></i>
+          <span>Tujuan</span>
+        </a>
+      </nav>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Header -->
+      <header class="main-header">
+        <div class="header-title">
+          <h2>Dashboard Keuangan</h2>
+          <p>Selamat pagi, <span class="username">Wahyu Setiawan</span></p>
+        </div>
+        <div class="header-actions">
+          <button class="icon-btn notification">
+            <i class="fas fa-bell"></i>
+            <span class="badge">2</span>
+          </button>
+          <div class="user-profile">
+            <svg
+              width="45"
+              height="45"
+              viewBox="0 0 45 45"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="22.5" cy="22.5" r="22.5" fill="#4361EE" />
+              <path
+                d="M22.5 21C25.8137 21 28.5 18.3137 28.5 15C28.5 11.6863 25.8137 9 22.5 9C19.1863 9 16.5 11.6863 16.5 15C16.5 18.3137 19.1863 21 22.5 21Z"
+                fill="white"
+              />
+              <path
+                d="M31.5 36C31.5 30.201 26.799 25.5 21 25.5H24C29.799 25.5 34.5 30.201 34.5 36H31.5Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+        </div>
+      </header>
+
+      <!-- Improved Stats Grid -->
+      <div class="stats-grid">
+        <!-- Total Balance Card -->
+        <div class="stats-card balance">
+          <div class="card-header">
+            <i class="fas fa-wallet"></i>
+            <h3>Total Saldo</h3>
+          </div>
+          <div class="card-content">
+            <h4>Rp 42.750.000</h4>
+            <div class="trend positive">
+              <i class="fas fa-arrow-up"></i>
+              <span>+12% bulan lalu</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Income Card (New) -->
+        <div class="stats-card income">
+          <div class="card-header">
+            <i class="fas fa-arrow-down"></i>
+            <h3>Pemasukan</h3>
+          </div>
+          <div class="card-content">
+            <h4>Rp 15.000.000</h4>
+            <div class="trend positive">
+              <i class="fas fa-arrow-up"></i>
+              <span>+8% bulan lalu</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Expense Card -->
+        <div class="stats-card expense">
+          <div class="card-header">
+            <i class="fas fa-chart-pie"></i>
+            <h3>Pengeluaran</h3>
+          </div>
+          <div class="card-content">
+            <h4>Rp 6.200.000</h4>
+            <div class="progress">
+              <div class="progress-bar" style="width: 75%"></div>
+            </div>
+            <span class="progress-text">75% dari anggaran</span>
+          </div>
+        </div>
+
+        <!-- Goals Card -->
+        <div class="stats-card goals">
+          <div class="card-header">
+            <i class="fas fa-bullseye"></i>
+            <h3>Target Tercapai</h3>
+          </div>
+          <div class="card-content">
+            <h4>45%</h4>
+            <div class="goals-progress">
+              <div class="progress-circle" data-percent="45"></div>
+              <div class="goals-detail">
+                <p>DP Rumah</p>
+                <small>Rp 45jt/Rp 100jt</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chart Section -->
+      <section class="chart-section">
+        <div class="section-header">
+          <h3><i class="fas fa-chart-bar"></i> Pola Pengeluaran</h3>
+          <div class="chart-controls">
+            <select class="chart-filter">
+              <option>30 Hari Terakhir</option>
+              <option>6 Bulan</option>
+            </select>
+          </div>
+        </div>
+        <div class="chart-container">
+          <!-- Placeholder untuk Chart.js -->
+          <canvas id="expenseChart"></canvas>
+        </div>
+      </section>
+
+      <!-- Recent Transactions -->
+      <section class="transaction-section">
+        <div class="section-header">
+          <h3><i class="fas fa-list"></i> Transaksi Terakhir</h3>
+          <a href="#" class="btn-view-all">Lihat Semua</a>
+        </div>
+
+        <table class="transaction-table">
+          <thead>
+            <tr>
+              <th>Tanggal</th>
+              <th>Kategori</th>
+              <th>Deskripsi</th>
+              <th>Jumlah</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>05 Okt</td>
+              <td>
+                <span class="category-dot food"></span>
+                Makanan
+              </td>
+              <td>Supermarket ABC</td>
+              <td class="amount negative">-Rp 325.000</td>
+            </tr>
+            <tr>
+              <td>04 Okt</td>
+              <td>
+                <span class="category-dot income"></span>
+                Pendapatan
+              </td>
+              <td>Gaji Bulanan</td>
+              <td class="amount positive">+Rp 15.000.000</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>

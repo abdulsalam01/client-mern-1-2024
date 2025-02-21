@@ -1,10 +1,11 @@
-function App () {
+import Navigation from "./components/layout/Navigation.tsx"
+
+function App() {
     return (
         <div>
-            <h1>Hello World</h1>
+            <Navigation />
         </div>
     )
 }
 
-
-export default App;
+export default App
